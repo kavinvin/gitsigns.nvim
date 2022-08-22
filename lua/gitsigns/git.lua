@@ -488,6 +488,7 @@ Obj.run_blame = function(self, lines, lnum, ignore_whitespace)
 
    local args = {
       'blame',
+      '--first-parent',
       '--contents', '-',
       '-L', lnum .. ',+1',
       '--line-porcelain',
